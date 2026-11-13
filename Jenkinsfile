@@ -15,7 +15,7 @@ pipeline{
     stage('Test'){
       steps{
         echo 'Expecting automated tests'
-        bat python -m unittest app'
+        bat 'python -m unittest app'
       }
     }
     stage ('Run Application'){
